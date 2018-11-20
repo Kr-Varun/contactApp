@@ -1,0 +1,50 @@
+.align_center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.add_contact_container{
+    position: fixed;
+    bottom: 5em;
+    right: 5em;
+}
+
+.delete_edit_container{
+    position: absolute;
+    right: 1em;
+    top: 8px;
+}
+.margin_left_10{
+    margin-left: 10px;
+}
+
+.myModal{
+     position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal_header{
+    background: gray;
+    text-align: center;
+    margin: -20px -20px 20px -20px !important;
+    color: white;
+    font-size: 2em;
+    
+}
+

@@ -1,0 +1,35 @@
+[{
+    "firstName": "Varun",
+    "lastName": "Kumar",
+    "email": "varunakaduke@gmail.com",
+    "phoneNumber": "8806661848",
+    "status": "Active"
+},
+{
+    "firstName": "Garima",
+    "lastName": "Verma",
+    "email": "garima@gmail.com",
+    "phoneNumber": "8806661448",
+    "status": "Active"
+},
+{
+    "firstName": "Milan",
+    "lastName": "Jain",
+    "email": "Mj@gmail.com",
+    "phoneNumber": "2988765422",
+    "status": "Active"
+},
+{
+    "firstName": "Raman",
+    "lastName": "Yadav",
+    "email": "RJ@gmail.com",
+    "phoneNumber": "8208572862",
+    "status": "Active"
+},
+{
+    "firstName": "Tarun",
+    "lastName": "Kumar",
+    "email": "TK@gmail.com",
+    "phoneNumber": "8806661848",
+    "status": "Active"
+}]
