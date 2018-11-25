@@ -37,37 +37,47 @@
       <div class="form-group">
         <label class="control-label col-xs-2 col-sm-2 col-md-2 col-lg-2">First Name:</label>
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-          <input type="text" name="fName" class="form-control col-xs-10 col-sm-10 col-md-10 col-lg-10" [(ngModel)]="fName" required>
+          <input type="text" name="fName" class="form-control col-xs-10 col-sm-10 col-md-10 col-lg-10" 
+          [ngClass]="{'error-cls':fName1.invalid && (fName1.dirty || fName1.touched)}"
+          [(ngModel)]="fName" required #fName1="ngModel">
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-xs-2 col-sm-2 col-md-2 col-lg-2">Last Name:</label>
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-          <input type="text" name="lName" class="form-control col-xs-10 col-sm-10 col-md-10 col-lg-10" [(ngModel)]="lName" required>
+          <input type="text" name="lName" class="form-control col-xs-10 col-sm-10 col-md-10 col-lg-10" 
+          [ngClass]="{'error-cls':lName1.invalid && (lName1.dirty || lName1.touched)}"
+          [(ngModel)]="lName" required #lName1="ngModel">
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-xs-2 col-sm-2 col-md-2 col-lg-2">Email:</label>
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-          <input type="email" name="email" class="form-control col-xs-10 col-sm-10 col-md-10 col-lg-10" [(ngModel)]="email" required>
+          <input type="email" name="email" email="true" class="form-control col-xs-10 col-sm-10 col-md-10 col-lg-10" 
+          [ngClass]="{'error-cls':emailId.invalid && (emailId.dirty || emailId.touched)}"
+          [(ngModel)]="email" required #emailId="ngModel">
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-xs-2 col-sm-2 col-md-2 col-lg-2">Phone Number:</label>
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-          <input type="number" name="pNo" class="form-control col-xs-10 col-sm-10 col-md-10 col-lg-10" [(ngModel)]="pNo" required>
+          <input type="text" pattern="^[0-9]{10}$" name="pNo" minlength="10" maxlength="10" 
+          [ngClass]="{'error-cls':pNo1.invalid && (pNo1.dirty || pNo1.touched)}"
+          class="form-control col-xs-10 col-sm-10 col-md-10 col-lg-10" [(ngModel)]="pNo" required #pNo1="ngModel">
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-xs-2 col-sm-2 col-md-2 col-lg-2">Status:</label>
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-          <input type="text" name="status" class="form-control col-xs-10 col-sm-10 col-md-10 col-lg-10" [(ngModel)]="status" required>
+          <input type="text" name="status" class="form-control col-xs-10 col-sm-10 col-md-10 col-lg-10" 
+          [ngClass]="{'error-cls':status1.invalid && (status1.dirty || status1.touched)}"
+           [(ngModel)]="status" required #status1="ngModel">
         </div>
       </div>
 
       <div class="form-group modal_buttons">
         <div class="col-sm-offset-9 col-sm-3">
-          <button type="submit" class="btn btn-default" [disabled]="form.invalid">Save Changes</button>
+          <button type="submit" class="btn btn-success" [disabled]="form.form.invalid">Save Changes</button>
           <button class="btn btn-default margin_left_10" (click)="openModal=false;">Cancel</button>
         </div>
       </div>
